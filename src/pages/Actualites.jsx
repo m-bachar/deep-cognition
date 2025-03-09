@@ -119,7 +119,7 @@ const Actualites = () => {
               className="newsletter-title"
               sx={{ marginBottom: "50px" }}
             >
-              Contactez Nous
+              Inscription à notre Newsletter
             </Typography>
 
             <Typography
@@ -127,9 +127,9 @@ const Actualites = () => {
               paragraph
               className="newsletter-description"
             >
-              Faites-nous part des défis de votre entreprise, et nos experts
-              vous aideront à dynamiser votre activité grâce à l’IA, aux données
-              et au digital
+              En vous inscrivant, vous recevrez régulièrement des informations
+              exclusives, des conseils pratiques, des offres spéciales et bien
+              plus encore.
             </Typography>
 
             <ThemeProvider theme={theme}>
