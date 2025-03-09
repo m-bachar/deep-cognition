@@ -1,0 +1,54 @@
+.footer {
+    background-color: rgb(34, 43, 69);
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 6px 0px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .social .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.footer .social .useful-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 25px;
+    margin-right: 50px;
+}
+
+.footer .social .useful-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.footer .social .useful-links a:hover {
+    color: rgb(99, 102, 241);
+}
+
+.footer .copyright {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+.footer .copyright p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

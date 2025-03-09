@@ -1,0 +1,405 @@
+.acceuil {
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+    background-image: url('../assets/bg.jpeg');
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+}
+
+.first .first-half {
+    width: 40%;
+    margin-top: 3%;
+}
+
+.first .first-half h1 {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+.first .first-half p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.first .first-half button {
+  margin-top: 50px;
+}
+
+.first .second-half {
+  width: 50%;
+}
+
+.first .second-half img {
+  width: 100%;
+  height: 90%;
+  border-radius: 20px;
+}
+
+.second {
+  background-color: rgb(34, 43, 69);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.second p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.second h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.second-text {
+  width: 50%;
+}
+
+.second-img {
+  width: 50%;
+}
+
+.second-img img {
+  height: 350px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.separator {
+  width: 110px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.vision {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding-top: 3%;
+  width: 70%;
+}
+
+.mission {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding-top: 3%;
+  width: 70%;
+}
+
+.equipe {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding-top: 3%;
+  width: 70%;
+}
+
+.third {
+    background-color: rgb(34, 43, 69);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 6px 0px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.third .first-half {
+    width: 50%;
+    text-align: center;
+}
+
+.third .separator {
+  margin-left: 31%;
+}
+
+.third .first-half h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.third .first-half p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.third .second-half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 25px;
+  padding-top: 3%;
+}
+
+.third .second-half h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+.third .second-half p {
+  font-size: 1.1rem;
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.third .second-half .first-col {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.third .second-half .second-col {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.third .card {
+  height: 350px;
+  width: 370px;
+  background-color: rgb(34, 43, 69);
+  border-radius: 20px;
+}
+
+.forth {
+  background-color: rgb(34, 43, 69);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.forth .separator {
+  margin-left: 25%;
+}
+
+.forth .first-half {
+  width: 50%;
+  text-align: left;
+}
+
+.forth .first-half h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  width: 70%;
+  margin-left: 25%;
+}
+
+.forth .first-half h3 {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  color: rgb(99, 102, 241)
+}
+
+.forth .first-half p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 70%;
+}
+
+#para {
+  margin-left: 25%;
+}
+
+.forth .first-half .col {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 40px;
+  margin-left: 25%;
+  width: 70%;
+  text-align: left;
+}
+
+.forth .first-half .row {
+  width: 80%;
+}
+
+.forth .second-half {
+  width: 35%;
+}
+
+.forth .second-half img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.fifth {
+    background-color: rgb(34, 43, 69);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 6px 0px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.fifth .separator {
+  margin-right: 23%;
+}
+
+.fifth h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.fifth p {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+.fifth button {
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1800px) {
+  .first .first-half {
+    margin-top: 5%;
+  }
+  .first .first-half h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  .first .first-half p {
+    font-size: 1.1rem;
+  }
+  .third .separator {
+    margin-left: 25%;
+  }
+  .third .second-half {
+    flex-direction: column !important;
+    gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+  .first .first-half {
+    margin-top: 5%;
+  }
+  .first .first-half h1 {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+  }
+  .first .first-half p {
+    font-size: 1rem;
+  }
+  .first .first-half button {
+    margin-top: 50px;
+  }
+  .vision, .equipe {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mission {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-img, .second-text {
+    width: 100%;
+  }
+  .second-img img {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .third .second-half {
+    flex-direction: column !important;
+    gap: 50px;
+  }
+  .third .separator {
+    margin-left: 15%;
+  }
+  .forth {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .forth .first-half {
+    width: 100% !important;
+  }
+  .forth .second-half {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768PX) and (max-width: 1023PX) {
+  .first .first-half h1 {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+  }
+  .first .first-half p {
+    font-size: 1rem;
+  }
+  .first .first-half button {
+    margin-top: 50px;
+  }
+  .vision, .equipe {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mission {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-img, .second-text {
+    width: 100%;
+  }
+  .second-img img {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .third .second-half {
+    flex-direction: column !important;
+    gap: 50px;
+  }
+  .third .separator {
+    margin-left: 4%;
+  }
+  .third .card {
+    height: 380px;
+    width: 350px;
+  }
+  .forth {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .forth .first-half {
+    width: 100% !important;
+  }
+  .forth .second-half {
+    display: none;
+  }
+  .fifth .separator {
+    margin-left: -35% !important;
+  }
+}
