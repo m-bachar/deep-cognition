@@ -1,5 +1,10 @@
-import { BrowserRouter as Router, Route, Routes, Navigate, Outlet } from "react-router-dom";
-
+import {
+  HashRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+  Outlet,
+} from "react-router-dom";
 
 // Pages
 import Acceuil from "./pages/Acceuil";
@@ -20,7 +25,7 @@ export const Layout = () => {
       <Footer />
     </>
   );
-}
+};
 
 const App = () => {
   return (
@@ -29,13 +34,11 @@ const App = () => {
         <Routes>
           {/* Layout */}
           <Route element={<Layout />}>
-
             {/* Public Routes */}
             <Route path="/" element={<Acceuil />} />
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/actualites" element={<Actualites />} />
             <Route path="/contact" element={<Contact />} />
-
           </Route>
 
           {/* 404 Routes */}
