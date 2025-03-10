@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
@@ -9,7 +9,35 @@ import EmailIcon from "@mui/icons-material/Email";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
 const Header = () => {
+  const location = useLocation();
   const navigate = useNavigate();
+
+  const { pathname } = location;
+  let acceuil = "acceuil-deactivated";
+  let solutions = "solutions-deactivated";
+  let actualites = "actualites-deactivated";
+
+  if (pathname === "/") {
+    document.title = "Deep Cognition | Accueil";
+    acceuil = "acceuil-activated";
+    solutions = "solutions-deactivated";
+    actualites = "actualites-deactivated";
+  } else if (pathname === "/solutions") {
+    document.title = "Deep Cognition | Solutions";
+    acceuil = "acceuil-deactivated";
+    solutions = "solutions-activated";
+    actualites = "actualites-deactivated";
+  } else if (pathname === "/actualites") {
+    document.title = "Deep Cognition | Actualités";
+    acceuil = "acceuil-deactivated";
+    solutions = "solutions-deactivated";
+    actualites = "actualites-activated";
+  } else if (pathname === "/contact") {
+    document.title = "Deep Cognition | Contactez-Nous";
+    acceuil = "acceuil-deactivated";
+    solutions = "solutions-deactivated";
+    actualites = "actualites-deactivated";
+  }
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -22,10 +50,9 @@ const Header = () => {
     setAnchorEl(null);
   };
 
-  // Navigation handler for links/buttons
   const navigateTo = (path) => {
     navigate(path);
-    setAnchorEl(null); // Close menu if it's open
+    setAnchorEl(null);
   };
 
   return (
@@ -37,13 +64,13 @@ const Header = () => {
       </div>
 
       <div className="header-links">
-        <Link to="/" onClick={() => navigateTo("/")}>
+        <Link to="/" onClick={() => navigateTo("/")} id={acceuil}>
           Accueil
         </Link>
-        <Link to="/solutions" onClick={() => navigateTo("/solutions")}>
+        <Link to="/solutions" onClick={() => navigateTo("/solutions")} id={solutions}>
           Solutions
         </Link>
-        <Link to="/actualites" onClick={() => navigateTo("/actualites")}>
+        <Link to="/actualites" onClick={() => navigateTo("/actualites")} id={actualites}>
           Actualités
         </Link>
         <Button
